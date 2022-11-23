@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Main Page</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-	<link rel="stylesheet" href="./main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet"  href="main.css">
 </head>
 <body>
-	<section class="hero">
+	<div class="wrapper">
+		<section class="hero">
 		<header class="headder">
 			<a href="#" class="logo" alt="lost shirt logo">
 				<img src="./ img/content/logos/logo-main.png" class="logo__pic"/>
@@ -21,18 +25,52 @@
 				<div class="main__content">
 					lostinspace@mail.com
 				</div>
+			</a>
 			</header>
+			<div class="hero__content">
 				<div class="fade-slider">
 					<div class="fade-slider__item">
-						<h1>
-							<div class="lined-text__word">три</div>
-							<div class="lined-text__word">футболки</div>
-							<div class="lined-text__word">по цене</div>
-							<div class="lined-text__word">двух</div>
-						</h1>
+						<div class="fade-slider__text">
+							<h1 class="lined-text">
+								<div class="lined-text__word">три</div>
+								<div class="lined-text__word">футболки</div>
+								<div class="lined-text__word lined-text__word-color-yellow">по цене</div>
+								<div class="lined-text__word lined-text__word-color-yellow">двух</div>
+							</h1>
+						</div>
 					</div>
 				</div>
-			</a>
-	</section>
+			</div>
+		</section>
+		<section class="product">
+			<ul class="filter">
+				<li class="filter__item">
+					<a href="#" class="filter__link">
+						Популярное
+					</a>
+				</li>
+				<li class="filter__item">
+					<a href="#" class="filter__link">
+						Новинки
+					</a>
+				</li>
+				<li class="filter__item">
+					<a href="#" class="filter__link">
+						Бестселлеры
+					</a>
+				</li>
+				<li class="filter__item">
+					<a href="#" class="filter__link">
+						Специальное предложение
+					</a>
+				</li>
+				<li class="filter__item">
+					<a href="#" class="filter__link">
+						Скоро в продаже
+					</a>
+				</li>
+			</ul>
+		</section>
+	</div>
 </body>
 </html>
